@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+
+    <ImageView
+        android:id="@+id/ivTU"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/tuvarna"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivTU"
+        android:layout_marginLeft="10dp"
+        android:text="Катедра КНТ"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvOOP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivTU"
+        android:layout_centerHorizontal="true"
+        android:text="КУРСОВ ПРОЕКТ ПО ОБЕКТНО ОРИАНТИРАНО ПРОГРАМИРАНЕ 2 ЧАСТ"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvStudents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOOP2"
+        android:text="Изготвили:"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_margin="20dp"/>
+
+    <ListView
+        android:id="@+id/lvStudents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOOP2"
+        android:layout_toRightOf="@+id/tvStudents"
+        android:text="Изготвили:"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>

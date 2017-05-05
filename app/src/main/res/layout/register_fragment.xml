@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etNickname"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:hint="Потребител"
+        android:textColor="@android:color/white"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/white"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_below="@+id/etNickname"
+        android:id="@+id/etPassword"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:hint="Парола"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_below="@+id/etPassword"
+        android:id="@+id/etRepeatPassword"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:hint="Повторете паролата"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_below="@+id/etRepeatPassword"
+        android:id="@+id/etEmail"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_below="@+id/etEmail"
+        android:id="@+id/etFullname"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:inputType="textCapSentences"
+        android:hint="Пълно име"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_below="@+id/etFullname"
+        android:id="@+id/etAge"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:hint="Години"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_below="@+id/etAge"
+        android:id="@+id/etCountry"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:inputType="textCapSentences"
+        android:hint="Държава"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_below="@+id/etCountry"
+        android:id="@+id/etCity"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:inputType="textCapSentences"
+        android:hint="Град"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_below="@+id/etCity"
+        android:id="@+id/etTelephone"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:hint="Телефон"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvPickType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etTelephone"
+        android:layout_centerHorizontal="true"
+        android:text="Кликнете тук за да изберете вид"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_below="@+id/tvPickType"
+        android:id="@+id/btnRegister"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_blue_selector"
+        android:hint="Регистация"
+        android:textColorHint="@android:color/white"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

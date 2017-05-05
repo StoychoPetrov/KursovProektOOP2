@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvUslovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Програма за обработка на летища и самолети"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="28sp"
+        android:layout_margin="70dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_below="@+id/tvUslovie"
+        android:id="@+id/etNickname"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:hint="Потребител"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:background="@android:color/holo_blue_light"/>
+    
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etNickname"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:hint="Парола"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_below="@+id/etPassword"
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_blue_selector"
+        android:hint="Вход"
+        android:textColorHint="@android:color/white"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:layout_below="@+id/btnLogin"
+        android:id="@+id/btnRegister"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_blue_selector"
+        android:hint="Регистрация"
+        android:textColorHint="@android:color/white"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegister"
+        android:text="Помощ"
+        android:textSize="24dp"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

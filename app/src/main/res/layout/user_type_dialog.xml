@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/logout_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@android:color/holo_blue_light"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Съобщение"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Изберете вашият вид"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/llButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btnDispatcher"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_light"
+                android:text="Диспечър"
+                android:textColor="@android:color/white"
+                android:textSize="22dp" />
+
+            <Button
+                android:id="@+id/btnBuyer"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_light"
+                android:text="Купувач"
+                android:textColor="@android:color/white"
+                android:textSize="22dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
